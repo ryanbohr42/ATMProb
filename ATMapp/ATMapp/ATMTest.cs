@@ -17,11 +17,9 @@ namespace ATMapp
                 if (breakdown[0].Equals(""))
                     command = 'F';
                 else
-                    //command = breakdown[0].ToUpper().charAt(0);
                     command = Convert.ToChar(breakdown[0].ToUpper().Substring(0,1));
-                    //System.out.println(command);
 
-                    switch (command)
+                switch (command)
                 {
                     case 'R':
                         {
